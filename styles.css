@@ -1,0 +1,129 @@
+:root {
+  --primary-color: #1E3A5F;
+  --secondary-color: #3B8EA5;
+  --accent-color: #F2C14E;
+  --bg-color: #f9f9f9;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Lora', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.site-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.site-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.site-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-nav button {
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.site-nav button:hover {
+  background: var(--accent-color);
+}
+
+.activity-panel {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.activity-panel h2 {
+  font-family: var(--font-heading);
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.controls {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  width: 4rem;
+  padding: 0.25rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.25rem;
+}
+
+.controls button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: var(--secondary-color);
+}
+
+#messages {
+  min-height: 100px;
+  margin-top: 1rem;
+  white-space: pre-wrap;
+}
+
+.site-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .controls input,
+  .controls button {
+    width: 100%;
+  }
+}

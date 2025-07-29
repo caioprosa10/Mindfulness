@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mindfulness Program</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>Mindfulness Program</h1>
+    </header>
+
+    <nav class="site-nav">
+      <ul>
+        <li><button id="breathingBtn">Breathing Activity</button></li>
+        <li><button id="reflectionBtn">Reflection Activity</button></li>
+        <li><button id="listingBtn">Listing Activity</button></li>
+      </ul>
+    </nav>
+
+    <section class="activity-panel">
+      <h2 id="activityTitle">Welcome!</h2>
+      <p id="activityDescription">Select an activity to begin.</p>
+
+      <div class="controls">
+        <label for="durationInput">Duration (seconds):</label>
+        <input type="number" id="durationInput" min="1" value="30">
+        <button id="startBtn">Start</button>
+      </div>
+
+      <div id="messages"></div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2025 Mindfulness Program</p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+<!-- index.html (no final do <body>) -->
+<script src="scripts.js"></script>
+</body>
+</html>
+
+</html>
